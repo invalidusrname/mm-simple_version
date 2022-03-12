@@ -8,25 +8,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v3
+        id: release
         with:
           release-type: ruby
           package-name: mm-simple_version
           bump-minor-pre-major: true
           version-file: "lib/mm/simple_version/version.rb"
+
+      - name: debugging
+        env: { SOMETHING: "${{steps.release.outputs"}
+        run: "echo $SOMETHING"
+
       - uses: actions/checkout@v2
         if: ${{ steps.release.outputs.release_created }}
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
+
+      - name: bundle
         if: ${{ steps.release.outputs.release_created }}
       - run: |
-          whoami
-          pwd
-          ls -l
           bundle
 
-        if: $${{ steps.release.outputs.release_created }}
       - name: publish gem
+        if: ${{ steps.release.outputs.release_created }}
         run: |
           mkdir -p $HOME/.gem
           touch $HOME/.gem/credentials
@@ -36,4 +42,3 @@ jobs:
           gem push *.gem
         env:
            GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_API_KEY}}"
-        if: ${{ steps.release.outputs.release_created }}
