@@ -18,6 +18,11 @@ jobs:
       - uses: actions/checkout@v2
         if: ${{ steps.release.outputs.release_created }}
 
+      - name: moar-debugging
+        run: |
+          ls -la
+          ls -la .ruby-version
+
       - uses: ruby/setup-ruby@v1
 
       - name: debugging
