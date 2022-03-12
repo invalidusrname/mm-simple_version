@@ -23,6 +23,8 @@ jobs:
           ls -la .ruby-version
 
       - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
       - name: debugging
         env:
@@ -38,6 +40,7 @@ jobs:
       - name: bundle
         if: ${{ steps.release.outputs.release_created }}
         run: |
+          bundle config unset --local deployment
           bundle
 
       - name: publish gem
