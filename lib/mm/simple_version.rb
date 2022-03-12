@@ -2,7 +2,7 @@
 
 require_relative "simple_version/version"
 
-module Mm
+module MM
   module SimpleVersion
     class Error < StandardError; end
     # Your code goes here...
