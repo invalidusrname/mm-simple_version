@@ -15,26 +15,13 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - name: moar-debugging
+      - name: remove Gemfile.lock # avoids bundle problems
         run: |
-          ls -la
           rm Gemfile.lock
-          git status
 
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-
-      - name: debugging
-        env:
-          SOMETHING: ${{steps.release.outputs.release_created}}
-          RUBY_VERSION: ${{env.RUBY_VERSION}}
-          FOO: "1"
-        run: |
-          echo "SOMETHING is: $SOMETHING ..."
-          echo "RUBY_VERSION is: ${RUBY_VERSION} ..."
-          echo "FOO is: ${FOO} ..."
-
 
       - name: bundle
         if: ${{ steps.release.outputs.release_created }}
