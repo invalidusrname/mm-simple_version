@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'mm/simple_version'
+require "mm/simple_version"
 
 puts MM::SimpleVersion::VERSION
