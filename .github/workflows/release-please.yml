@@ -12,15 +12,13 @@ jobs:
         with:
           release-type: ruby
           package-name: mm-simple_version
-          bump-minor-pre-major: true
-          version-file: "lib/mm/simple_version/version.rb"
 
       - uses: actions/checkout@v2
 
       - name: moar-debugging
         run: |
           ls -la
-          ls -la .ruby-version
+          rm Gemfile.lock
           git status
 
       - uses: ruby/setup-ruby@v1
