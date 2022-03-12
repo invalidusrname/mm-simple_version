@@ -19,9 +19,11 @@ jobs:
         env:
           SOMETHING: ${{steps.release.outputs.release_created}}
           RUBY_VERSION: ${{env.RUBY_VERSION}}
+          FOO: "1"
         run: |
           echo "SOMETHING is: $SOMETHING ..."
           echo "RUBY_VERSION is: ${RUBY_VERSION} ..."
+          echo "FOO is: ${FOO} ..."
 
       - uses: actions/checkout@v2
         if: ${{ steps.release.outputs.release_created }}
