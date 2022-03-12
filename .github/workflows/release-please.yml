@@ -16,7 +16,6 @@ jobs:
           version-file: "lib/mm/simple_version/version.rb"
 
       - uses: actions/checkout@v2
-        if: ${{ steps.release.outputs.release_created }}
 
       - name: moar-debugging
         run: |
