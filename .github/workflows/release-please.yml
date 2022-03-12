@@ -19,7 +19,12 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
         if: ${{ steps.release.outputs.release_created }}
-      - run: bundle
+      - run: |
+          whoami
+          pwd
+          ls -l
+          bundle
+
         if: $${{ steps.release.outputs.release_created }}
       - name: publish gem
         run: |
@@ -30,5 +35,5 @@ jobs:
           gem build *.gemspec
           gem push *.gem
         env:
-           GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
+           GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_API_KEY}}"
         if: ${{ steps.release.outputs.release_created }}
