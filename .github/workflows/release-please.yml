@@ -17,9 +17,11 @@ jobs:
 
       - name: debugging
         env:
-          SOMETHING: "${{steps.release.outputs}}"
+          SOMETHING: ${{steps.release.outputs.release_created}}
+          RUBY_VERSION: ${{env.RUBY_VERSION}}
         run: |
           "echo $SOMETHING"
+          "echo $RUBY_VERSION"
 
       - uses: actions/checkout@v2
         if: ${{ steps.release.outputs.release_created }}
