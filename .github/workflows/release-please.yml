@@ -16,8 +16,10 @@ jobs:
           version-file: "lib/mm/simple_version/version.rb"
 
       - name: debugging
-        env: { SOMETHING: "${{steps.release.outputs"}
-        run: "echo $SOMETHING"
+        env:
+          SOMETHING: "${{steps.release.outputs"
+        run: |
+          "echo $SOMETHING"
 
       - uses: actions/checkout@v2
         if: ${{ steps.release.outputs.release_created }}
