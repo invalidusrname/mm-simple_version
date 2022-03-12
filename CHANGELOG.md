@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+### [0.1.1](https://github.com/invalidusrname/mm-simple_version/compare/v0.1.1...v0.1.1) (2022-03-12)
+
+
+### Miscellaneous Chores
+
+* release 0.1.1 ([5aaa046](https://github.com/invalidusrname/mm-simple_version/commit/5aaa0466964fecc5d2954ea08139d5ef722b1ddf))
+
 ### [0.1.1](https://github.com/invalidusrname/mm-simple_version/compare/v0.1.0...v0.1.1) (2022-03-12)
 
 
