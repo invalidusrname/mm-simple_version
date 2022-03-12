@@ -21,6 +21,7 @@ jobs:
         run: |
           ls -la
           ls -la .ruby-version
+          git status
 
       - uses: ruby/setup-ruby@v1
         with:
