@@ -30,7 +30,7 @@ jobs:
 
       - name: bundle
         if: ${{ steps.release.outputs.release_created }}
-      - run: |
+        run: |
           bundle
 
       - name: publish gem
