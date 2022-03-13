@@ -30,7 +30,7 @@ jobs:
           bundle
 
       - name: publish gem
+        if: ${{ steps.release.outputs.release_created }}
         uses: dawidd6/action-publish-gem@v1
         with:
-          api_key: ${{secrets.RUBYGEMS_API_KEY}}
           github_token: ${{secrets.GITHUB_TOKEN}}
