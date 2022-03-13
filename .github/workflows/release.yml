@@ -22,7 +22,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
 
       - name: install ruby
-      - uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
         if: ${{ steps.release.outputs.release_created }}
