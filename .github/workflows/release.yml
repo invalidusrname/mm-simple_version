@@ -19,18 +19,23 @@ jobs:
       - name: remove Gemfile.lock
         run: |
           rm Gemfile.lock
+        if: ${{ steps.release.outputs.release_created }}
 
+      - name: install ruby
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: bundle
         run: |
           bundle config unset --local deployment
           bundle
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: publish gem
         uses: dawidd6/action-publish-gem@v1
         with:
           api_key: ''
           github_token: ${{secrets.GITHUB_TOKEN}}
+        if: ${{ steps.release.outputs.release_created }}
