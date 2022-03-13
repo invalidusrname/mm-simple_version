@@ -1,6 +1,6 @@
 # MM::SimpleVersion
 
-A simple gem that just prints the gem name version.
+A simple gem that just prints the gem name and its version.
 
 ## Installation
 
@@ -19,8 +19,6 @@ Or install it yourself as:
     $ gem install mm-simple_version
 
 ## Usage
-
-Just prints out the name of this gem and its version
 
     $ simple_version
 
