@@ -3,4 +3,4 @@
 
 require "mm/simple_version"
 
-puts "SimpleVersion version: #{MM::SimpleVersion::VERSION}"
+puts "SimpleVersion #{MM::SimpleVersion::VERSION}"

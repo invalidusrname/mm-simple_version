@@ -9,7 +9,7 @@ A simple gem that just prints the gem name and its version.
 ## Usage
 
     $ simple_version
-    SimpleVersion version: 0.2.1
+    SimpleVersion 0.2.2
 
 ## Development
 
