@@ -17,7 +17,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`.
 
-Releases are handled with Github Actions and using [Release Please](https://github.com/google-github-actions/release-please-action). As long as you're using Conventional Commits](https://github.com/google-github-actions/release-please-action#how-should-i-write-my-commits), the bot will automatically create PRs. You'll still need to checkout out that PR, bundle, and commit the `Gemfile.lock`. Once you've pushed that commit to the PR and all workflows pass, you can merge it in. That'll kick off one final workflow to tag the release and publish to rubygems.org.
+Releases are handled with Github Actions and using [Release Please](https://github.com/google-github-actions/release-please-action). As long as you're using [Conventional Commits](https://github.com/google-github-actions/release-please-action#how-should-i-write-my-commits), the bot will automatically create PRs. You'll still need to checkout out that PR ([example](https://github.com/invalidusrname/mm-simple_version/pull/13)), bundle, and commit the `Gemfile.lock`. Push that commit to the PR. If all workflows pass, you can merge it in and that will kick off one final workflow to tag the release and publish to rubygems.org.
 
 ## Contributing
 
