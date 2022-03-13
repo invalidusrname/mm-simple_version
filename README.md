@@ -4,23 +4,12 @@ A simple gem that just prints the gem name and its version.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'mm-simple_version'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
     $ gem install mm-simple_version
 
 ## Usage
 
     $ simple_version
+    SimpleVersion version: 0.2.1
 
 ## Development
 
