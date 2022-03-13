@@ -14,21 +14,17 @@ jobs:
           package-name: mm-simple_version
 
       - uses: actions/checkout@v2
-        if: ${{ steps.release.outputs.release_created }}
 
       # avoids bundle problems
       - name: remove Gemfile.lock
-        if: ${{ steps.release.outputs.release_created }}
         run: |
           rm Gemfile.lock
 
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-        if: ${{ steps.release.outputs.release_created }}
 
       - name: bundle
-        if: ${{ steps.release.outputs.release_created }}
         run: |
           bundle config unset --local deployment
           bundle
