@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [0.2.0](https://github.com/invalidusrname/mm-simple_version/compare/v0.1.5...v0.2.0) (2022-03-13)
+
+
+### Features
+
+* print out gem name and version ([fff2836](https://github.com/invalidusrname/mm-simple_version/commit/fff2836dbae387773c0956a84ee4d762f8fb1d46))
+
 ### [0.1.5](https://github.com/invalidusrname/mm-simple_version/compare/v0.1.4...v0.1.5) (2022-03-12)
 
 
