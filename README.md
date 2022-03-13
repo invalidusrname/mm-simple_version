@@ -22,7 +22,7 @@ Or install it yourself as:
 
 Just prints out the name of this gem and it's version
 
-$ simple_version
+    $ simple_version
 
 ## Development
 
