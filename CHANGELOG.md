@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+### [0.2.1](https://github.com/invalidusrname/mm-simple_version/compare/v0.2.0...v0.2.1) (2022-03-13)
+
+
+### Bug Fixes
+
+* wrong executable dir ([521f094](https://github.com/invalidusrname/mm-simple_version/commit/521f094c93600a9d9656f3f673f77d02a6816e3a))
+
 ## [0.2.0](https://github.com/invalidusrname/mm-simple_version/compare/v0.1.5...v0.2.0) (2022-03-13)
 
 
