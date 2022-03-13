@@ -4,4 +4,3 @@
 require "mm/simple_version"
 
 puts "SimpleVersion version: #{MM::SimpleVersion::VERSION}"
-
