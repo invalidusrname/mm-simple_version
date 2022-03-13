@@ -1,3 +1,6 @@
+[![Gem Version](https://badge.fury.io/rb/mm-simple_version.svg)](https://badge.fury.io/rb/mm-simple_version)
+[![Ruby](https://github.com/invalidusrname/mm-simple_version/actions/workflows/main.yml/badge.svg)](https://github.com/invalidusrname/mm-simple_version/actions/workflows/main.yml)
+
 # MM::SimpleVersion
 
 A simple gem that just prints the gem name and its version.
