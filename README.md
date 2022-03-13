@@ -15,7 +15,9 @@ A simple gem that just prints the gem name and its version.
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To install this gem onto your local machine, run `bundle exec rake install`.
+
+Releases are handled with Github Actions and using [Release Please](https://github.com/google-github-actions/release-please-action). As long as you're using Conventional Commits](https://github.com/google-github-actions/release-please-action#how-should-i-write-my-commits), the bot will automatically create PRs. You'll still need to checkout out that PR, bundle, and commit the `Gemfile.lock`. Once you've pushed that commit to the PR and all workflows pass, you can merge it in. That'll kick off one final workflow to tag the release and publish to rubygems.org.
 
 ## Contributing
 
