@@ -1,5 +1,14 @@
 ## [Unreleased]
 
+## [0.2.4](https://github.com/invalidusrname/mm-simple_version/compare/v0.2.3...v0.2.4) (2022-11-24)
+
+
+### Bug Fixes
+
+* bump ruby in github action ([df8fd72](https://github.com/invalidusrname/mm-simple_version/commit/df8fd72ab6e6c61a9ddf8b3f1d53ec899cc78c4c))
+* test out release-please settings with GEM_NAME ([875cdeb](https://github.com/invalidusrname/mm-simple_version/commit/875cdeb9930a124585d72ce210fe07c9e5279ce0))
+* update ruby and bundled gems ([06fcad1](https://github.com/invalidusrname/mm-simple_version/commit/06fcad1a2680121abc32a9e1461466bd81fe5dca))
+
 ### [0.2.3](https://github.com/invalidusrname/mm-simple_version/compare/v0.2.2...v0.2.3) (2022-03-13)
 
 
