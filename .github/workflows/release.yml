@@ -1,7 +1,8 @@
-name: release-please
-on:
+name: release
+"on":
   push:
-    branches: [master]
+    branches:
+      - master
 jobs:
   release-please:
     runs-on: ubuntu-latest
@@ -10,33 +11,27 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
+      - uses: actions/checkout@v3
         with:
           release-type: ruby
-          package-name: ${{ env.GEM_NAME }}
-
-      - uses: actions/checkout@v3
-
-      # avoids bundle problems
-      - name: remove Gemfile.lock
+          package-name: "${{ env.GEM_NAME }}"
+      - name: remove Gemfile.lock # avoids bundle problems
+        if: "${{ steps.release.outputs.release_created }}"
         run: |
           rm Gemfile.lock
-        if: ${{ steps.release.outputs.release_created }}
-
       - name: install ruby
+        if: "${{ steps.release.outputs.release_created }}"
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-        if: ${{ steps.release.outputs.release_created }}
-
       - name: bundle
+        if: "${{ steps.release.outputs.release_created }}"
         run: |
           bundle config unset --local deployment
           bundle
-        if: ${{ steps.release.outputs.release_created }}
-
       - name: publish gem
+        if: "${{ steps.release.outputs.release_created }}"
         uses: dawidd6/action-publish-gem@v1
         with:
-          api_key: ${{secrets.RUBYGEMS_API_KEY}}
-          github_token: ${{secrets.GITHUB_TOKEN}}
-        if: ${{ steps.release.outputs.release_created }}
+          api_key: "${{secrets.RUBYGEMS_API_KEY}}"
+          github_token: "${{secrets.GITHUB_TOKEN}}"
