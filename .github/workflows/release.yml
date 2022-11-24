@@ -1,17 +1,18 @@
+name: release-please
 on:
   push:
-    branches:
-      - master
-name: release-please
+    branches: [master]
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    env:
+      GEM_NAME: mm-simple_version
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
           release-type: ruby
-          package-name: mm-simple_version
+          package-name: ${{ env.GEM_NAME }}
 
       - uses: actions/checkout@v2
 
