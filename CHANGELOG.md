@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [0.2.5](https://github.com/invalidusrname/mm-simple_version/compare/v0.2.4...v0.2.5) (2022-12-26)
+
+
+### Bug Fixes
+
+* bumping to latest ruby release ([7427d9e](https://github.com/invalidusrname/mm-simple_version/commit/7427d9ebbe7669789b684ddb7341f7c633bf7476))
+
 ## [0.2.4](https://github.com/invalidusrname/mm-simple_version/compare/v0.2.3...v0.2.4) (2022-11-24)
 
 
