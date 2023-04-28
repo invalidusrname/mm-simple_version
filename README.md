@@ -24,7 +24,7 @@ Releases are handled with Github Actions and using [Release Please](https://gith
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/invalidusrname/mm-simple_version. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/invalidusrname/mm-simple_version/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at [mm-simpleversion](https://github.com/invalidusrname/mm-simple_version). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/invalidusrname/mm-simple_version/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
