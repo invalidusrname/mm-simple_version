@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [0.3.0](https://github.com/invalidusrname/mm-simple_version/compare/v0.2.5...v0.3.0) (2024-11-03)
+
+
+### Features
+
+* add auto-approve for dependabot patch updates ([149193b](https://github.com/invalidusrname/mm-simple_version/commit/149193beffbcc34960e697358ac9feb745fe479e))
+
 ## [0.2.5](https://github.com/invalidusrname/mm-simple_version/compare/v0.2.4...v0.2.5) (2022-12-26)
 
 

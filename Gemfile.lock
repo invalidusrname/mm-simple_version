@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mm-simple_version (0.2.5)
+    mm-simple_version (0.3.0)
 
 GEM
   remote: https://rubygems.org/
