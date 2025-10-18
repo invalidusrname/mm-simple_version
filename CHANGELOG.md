@@ -1,5 +1,13 @@
 ## [Unreleased]
 
+## [0.4.1](https://github.com/invalidusrname/mm-simple_version/compare/mm-simple_version/v0.4.0...mm-simple_version/v0.4.1) (2025-10-18)
+
+
+### Bug Fixes
+
+* incorrect path to version for release-please to check ([283c134](https://github.com/invalidusrname/mm-simple_version/commit/283c134d69f1e3aee1eededc29aa17e12660de64))
+* incorrect path to version for release-please to check ([08be9e3](https://github.com/invalidusrname/mm-simple_version/commit/08be9e3b8f461166327103e2c761aa51ef8a6c02))
+
 ## [0.4.0](https://github.com/invalidusrname/mm-simple_version/compare/mm-simple_version/v0.3.0...mm-simple_version/v0.4.0) (2025-10-18)
 
 
