@@ -4,7 +4,7 @@
       "bump-minor-pre-major": true,
       "package-name": "mm-simple_version",
       "release-type": "ruby",
-      "version-file": "lib/simple_version/version.rb"
+      "version-file": "lib/mm/simple_version/version.rb"
     }
   }
 }
