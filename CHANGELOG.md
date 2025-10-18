@@ -1,5 +1,20 @@
 ## [Unreleased]
 
+## [0.4.0](https://github.com/invalidusrname/mm-simple_version/compare/mm-simple_version/v0.3.0...mm-simple_version/v0.4.0) (2025-10-18)
+
+
+### Features
+
+* bump ([30aabfb](https://github.com/invalidusrname/mm-simple_version/commit/30aabfbca0c066e206907e3f746ceac0a1ab8f6b))
+
+
+### Bug Fixes
+
+* bump ([c780a7f](https://github.com/invalidusrname/mm-simple_version/commit/c780a7f930fa98d30b1fb78f3fe291498e0f2ce0))
+* bump version ([75dc1dc](https://github.com/invalidusrname/mm-simple_version/commit/75dc1dc8aad7d458ed5ca3b2b753267b4d38363b))
+* use googleapis/release-please-action ([1e8dcdc](https://github.com/invalidusrname/mm-simple_version/commit/1e8dcdc24f7ae4556193ad0c36c2109205c0f009))
+* use googleapis/release-please-action ([1d4a467](https://github.com/invalidusrname/mm-simple_version/commit/1d4a467a8213c48bbce0b74f9d9b98110efdda45))
+
 ## [0.3.0](https://github.com/invalidusrname/mm-simple_version/compare/mm-simple_version/v0.2.3...mm-simple_version/v0.3.0) (2025-10-18)
 
 
