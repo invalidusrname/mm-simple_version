@@ -26,6 +26,7 @@ jobs:
         id: update-bundler
         run: |
           gem update bundler
+          bundle config set --local frozen false
           bundle update --bundler
 
           if git diff --quiet Gemfile.lock; then
