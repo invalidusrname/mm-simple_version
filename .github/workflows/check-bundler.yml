@@ -47,3 +47,4 @@ jobs:
           branch: update-bundler-version
           delete-branch: true
           labels: dependencies
+          add-paths: Gemfile.lock
