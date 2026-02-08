@@ -1,5 +1,13 @@
 ## [Unreleased]
 
+## [0.4.3](https://github.com/invalidusrname/mm-simple_version/compare/mm-simple_version/v0.4.2...mm-simple_version/v0.4.3) (2026-02-08)
+
+
+### Bug Fixes
+
+* bump to ruby 4.0.1 ([b396896](https://github.com/invalidusrname/mm-simple_version/commit/b396896b639e3e99f575bdf5d592a5383652364f))
+* bump to ruby 4.0.1 ([60eab85](https://github.com/invalidusrname/mm-simple_version/commit/60eab8599d0269c512e55c1b1b76bc1112aa713b))
+
 ## [0.4.2](https://github.com/invalidusrname/mm-simple_version/compare/mm-simple_version/v0.4.1...mm-simple_version/v0.4.2) (2026-02-08)
 
 
