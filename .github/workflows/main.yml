@@ -7,11 +7,7 @@ name: ruby
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: "Ruby ${{ matrix.ruby }}"
-    strategy:
-      matrix:
-        ruby:
-          - 3.4.1
+    name: Ruby
     steps:
       - uses: actions/checkout@v6
       - name: remove Gemfile.lock
@@ -20,7 +16,6 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "${{ matrix.ruby }}"
           bundler-cache: true
       - name: Run the default task
         run: bundle exec rake
