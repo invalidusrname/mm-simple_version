@@ -74,4 +74,4 @@ DEPENDENCIES
   rubocop-rspec (~> 3.9.0)
 
 BUNDLED WITH
-  4.0.9
+  4.0.10
