@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Ruby
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
       - name: remove Gemfile.lock
         run: |
           rm Gemfile.lock
